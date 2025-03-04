@@ -12,12 +12,11 @@
             <button>Log in</button>
             <button onclick="window.location.href='#service_section'">Services</button>
             <button onclick="window.location.href='#about_us_section'">About us</button>
-            <button>Contact</button>
+            <button onclick="window.location.href='#contact_us'">Contact</button>
         </div>
         <video autoplay muted loop  class="video_background">
             <source src="background\clean.mp4" type="video/mp4">
        </video> 
-        <!-- <img src="img\Pulitex-img-nobackground.png" class="logo"> -->
         <h1 id="title">Pulitex</h1>
         <h3 id="slogan">Quality that lasts!</h3>
         <button class="home_button" onclick="window.location.href='#home'">Home</button>  
@@ -117,12 +116,12 @@
         <img src="img\home_background.jpg" class="home_background">
         <div class="blank_wall_right">        
             <p class="home_office_service_information">
-            We provide comprehensive cleaning services designed to create clean, healthy, and inviting environments. 
+            For your home, we provide comprehensive cleaning services designed to create clean, healthy, and inviting environments. 
             For your home, we offer everything from regular upkeep to deep cleans, ensuring a comfortable and relaxing 
             space for you and your family.
             </p>
         </div>
-        <div class="third_border_bottom"></div>
+        <div class="third_border_bottom" id=""></div>
     </section>
 
     <section class="fourth_container" id="office">
@@ -138,24 +137,57 @@
 
     <section class="fifth_container" id="about_us_section">
         <div class="info_section_bar">
-            <h1>Nosotros</h1>
+            <h1>About us</h1>
         </div>
-        <img src="img\team.jpg" class="team_img">
-        <p class="fifth_container_info">
-            En <strong>Limipio Express</strong>, creemos que un hogar limpio es un hogar feliz. Nos dedicamos a proporcionar servicios 
-            de la más alta calidad a nuestros clientes. Nuestro equipo de profesionales altamente capacitados utiliza productos x y 
-            técnicas de limpieza avanzadas para garantizar resultados impecables. Nos enorgullecemos de nuestra atención al detalle 
-            y de nuestra capacidad para construir relaciones duraderas con nuestros clientes. 
-            ¡Confíe en nosotros para transformar su espacio en un oasis de limpieza!
-        </p>
-        <div class="third_border_bottom"></div> 
-        <div class="icons"></div> 
+        <div class="about_us_container">
+            <div class="about_us_item_img">
+                <img src="img\team.jpg" id="team_img">
+            </div>
+            <div class="about_us_item_p">
+                <p>
+                    Our team of experienced and dedicated cleaning professionals is the heart of Pulitex. 
+                    We are thoroughly trained, fully vetted, and passionate about delivering exceptional results.
+                     We understand the importance of trust and respect, and we treat your home or office with the utmost care.
+                </p>
+            </div>   
+            <div class="principles">
+                <div class="principles_item">
+                    <img src="img\target.png" alt="Mission icon" class="principles_icon">
+                    <p><strong>Mission</strong></p>
+                    <p id="principles_info">
+                        To deliver exceptional cleaning solutions that exceed expectations, 
+                        fostering clean and comfortable spaces for our clients.
+                    </p>
+                </div>
+
+                <div class="principles_item">
+                    <img src="img\magnifying-glass.png" alt="Vision icon" class="principles_icon">
+                    <p><strong>Vision</strong></p>
+                    <p id="principles_info">To build a future where every home and workplace enjoys the benefits of a consistently clean 
+                    and healthy environment, achieved through our commitment to quality and sustainability.</p>
+                </div>
+
+                <div class="principles_item">
+                    <img src="img\diamond.png" alt="Values icon" class="principles_icon">
+                    <p><strong>Values</strong></p>
+                    <p id="principles_info">
+                        Quality & Detail.<br>
+                        Reliability & Trust.<br>
+                        Integrity & Honesty.<br>
+                        Customer Focus.<br>
+                        Eco-Friendly.
+                    </p>
+                    
+                </div>
+            </div>         
+        </div>
+  
 
     </section>
 
-    <section class="sixth_container">
+    <section class="sixth_container" id="contact_us">
         <div class="info_section_bar">
-            <h1>Contactanos</h1>
+            <h1>Contact us</h1>
         </div>
         <p>
             En <strong>Limipio Express</strong>, creemos que un hogar limpio es un hogar feliz. Nos dedicamos a proporcionar servicios 
