@@ -141,7 +141,6 @@ body{
 }
 .colored_row{
     display: flex;
-    height: 370px;
     width: 100%;
     padding:15px 0 15px 0;
     margin-top: 5px;
@@ -158,7 +157,6 @@ body{
 }
 .uncolored_row{
     display: flex;
-    height: 100%;
     width: 100%;
     padding:15px 0 15px 0;
     margin-top: 5px;
@@ -170,12 +168,19 @@ body{
     height: 350px;
     width: 350px;
 }
+.second_container div img:hover{
+    width: auto;
+    height: 375px;
+    transition: 2s;
+    filter:blur(1px);
+}
+
 .border_bottom{
     border-bottom:solid #583d34;
     position: absolute;
     width: 100%;
     height: 130%;
-    z-index: 5;
+    z-index: -1;
     border-width: 6px;
     padding: 0 0 40px 0;
 }
@@ -186,6 +191,7 @@ body{
     height: 130%;
     border-width: 6px;
     padding: 40px 0 0 0;
+    z-index: -1;
     
 }
 .colored_img{
@@ -196,11 +202,17 @@ body{
 }
 .img_info{
     position:absolute;
-    z-index: 2;
+    z-index: 0;
     color:#ffffff;
     font-size: 40px;
-    filter: drop-shadow(2px 2px 20px #000000);
+    filter: drop-shadow(2px 2px 10px #000000);
+    text-align: center;
 }
+.img_info p{
+    padding: 0;
+    margin: 0;
+}
+
 .third_container{
     position: relative;
     margin-top: 150px;
@@ -271,12 +283,39 @@ body{
     line-height: 2;
     margin-left:5%;
 }
-#team_img{
+.team_img{
     height: auto;
     width: 80%;
     border-radius: 10px;
     margin-left: 15%;
 }
+.team_container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.team_img_profile{
+    height: 400px;
+    width:300px;
+    border-radius: 25px;
+}
+.team_item{
+    background-color: rgba(81, 127, 131, 1);
+    background-color: #517f83;
+    padding:8px 8px 8px 8px;
+    border-radius: 25px;
+    width: 300px;
+}
+.team_item p{
+    color:#fff;
+    font-size: 25px;
+    margin: 15px;
+}
+
 .fifth_container_info strong{
     color:#1f1b17;
 }
@@ -330,19 +369,28 @@ body{
     width: 45%;
     left:5%;
     font-size: 24px;
-    line-height: 1.5;
+    line-height:2;
 }
-.sm_container{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: space-around;
+.social_media_container{
+
     position: relative;
-    height: 350px;
+
+}
+.social_media_item{
+    margin: 65px 0 20px 0;
+    display: flex;
+    align-items: center;
     
 }
-.contact_sm{
-    height:auto;
-    width: 150px;
-    
+.social_media_item img{
+    height: 100px;
+    width: auto;
+    margin-left: 50px;
+}
+.social_media_item img:hover{
+    height: 125px;
+    transition: 0.5s;
+}
+.social_media_item a{
+    font-size: 25px;
 }
